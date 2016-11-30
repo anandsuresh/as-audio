@@ -21,13 +21,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anandsuresh/as-sox.git"
+    "url": "git+https://github.com/anandsuresh/as-audio.git"
   },
   "main": "index.js",
   "bugs": {
-    "url": "https://github.com/anandsuresh/as-sox/issues"
+    "url": "https://github.com/anandsuresh/as-audio/issues"
   },
-  "homepage": "https://github.com/anandsuresh/as-sox#readme",
+  "homepage": "https://github.com/anandsuresh/as-audio#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",

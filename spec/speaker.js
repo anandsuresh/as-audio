@@ -26,11 +26,6 @@ describe('Speaker', function () {
     it('should not throw an error when instantiated without arguments', function () {
       const speaker = new Speaker();
       expect(speaker).to.be.an.instanceOf(Speaker);
-      expect(speaker.bits).to.equal(16);
-      expect(speaker.channels).to.equal(2);
-      expect(speaker.endianness).to.equal('little');
-      expect(speaker.encoding).to.equal('signed-integer');
-      expect(speaker.sampleRate).to.equal(44100);
       expect(speaker.type).to.equal('raw');
     });
 
