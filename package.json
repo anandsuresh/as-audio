@@ -1,0 +1,50 @@
+{
+  "name": "as-audio",
+  "version": "1.0.0",
+  "description": "A Node.js library to handle audio operations",
+  "keywords": [
+    "sox",
+    "mic",
+    "microphone",
+    "speaker",
+    "audio",
+    "sound"
+  ],
+  "author": "Anand Suresh",
+  "contributors": [
+    {
+      "name": "Anand Suresh",
+      "email": "anandsuresh@gmail.com",
+      "url": "https://github.com/anandsuresh"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandsuresh/as-sox.git"
+  },
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/anandsuresh/as-sox/issues"
+  },
+  "homepage": "https://github.com/anandsuresh/as-sox#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "eslint": "^3.8.1",
+    "eslint-plugin-mocha": "^4.7.0",
+    "eslint-plugin-promise": "^3.3.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "debug": "^2.3.3",
+    "lodash": "^4.17.2"
+  },
+  "scripts": {
+    "lint": "eslint lib/**/*.js spec/**/*.js",
+    "pretest": "npm install && npm run lint",
+    "test": "mocha --ui bdd --reporter spec --recursive spec",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- --ui bdd --reporter spec --recursive spec; open coverage/lcov-report/index.html > /dev/null 2>&1"
+  }
+}
