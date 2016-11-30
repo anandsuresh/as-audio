@@ -85,5 +85,23 @@ describe('Speaker', function () {
       mic.start();
       setTimeout(() => mic.stop(), 1000);
     });
+
+    it('should emit a `close` event when done', function (done) {
+      let speaker = new Speaker()
+        .on('close', done);
+
+      mic.pipe(speaker);
+      mic.start();
+      setTimeout(() => mic.stop(), 1000);
+    });
+
+    it('should emit a `finish` event when done', function (done) {
+      let speaker = new Speaker()
+        .on('finish', done);
+
+      mic.pipe(speaker);
+      mic.start();
+      setTimeout(() => mic.stop(), 1000);
+    });
   });
 });
